@@ -12,7 +12,12 @@ fn main() {
 
 
     // but with struct we can group them all together as they are all associated to that of a door 
-    
+
+    let living_room_door : Door = Door {
+        width: 100,
+        height: 120,
+        is_open: false
+    };
 
 }
 
