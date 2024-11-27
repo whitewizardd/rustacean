@@ -18,15 +18,28 @@ fn main() {
     // below is to check the min and max value for signed and unsigned integers (i.e, i and u)
     // also we'd check that of the floating point as well, f64 and f32
 
-    // signed integers i8, -128 to 127
-    println!("here is the minimum and maximum value for the signed integer for i8 ::: {} , {}", i8::MIN , i8::MAX);
+    // // signed integers i8, -128 to 127
+    // println!("here is the minimum and maximum value for the signed integer for i8 ::: {} , {}", i8::MIN , i8::MAX);
 
-    //unsigned integers u8, 0 - 255
-    println!("here is the minimum and maximum value for the unsigned integer for u8 ::: {} , {}", u8::MIN , u8::MAX);
+    // //unsigned integers u8, 0 - 255
+    // println!("here is the minimum and maximum value for the unsigned integer for u8 ::: {} , {}", u8::MIN , u8::MAX);
 
-    // max and min for f32
-    println!("here is the minimum and maximum value for the floating integer for f32::: {} , {}", f32::MIN , f32::MAX);
+    // // max and min for f32
+    // println!("here is the minimum and maximum value for the floating integer for f32::: {} , {}", f32::MIN , f32::MAX);
 
-    // max and min for f64 
-    println!("here is the minimum and maximum value for the floating integer for f64 ::: {} , {}", f64::MIN , f64::MAX);
+    // // max and min for f64 
+    // println!("here is the minimum and maximum value for the floating integer for f64 ::: {} , {}", f64::MIN , f64::MAX);
+
+
+
+    // below are the challenges/tasks given in chapter 
+
+    // the below is x and it is a floating point
+
+    let x: f32 = 1.0 * 10.0;
+    // below is very dicey because when we perform a division we could also hit a decimal point depending on the value passed but we would't use the floating point because this would give a whole number 
+
+    let y: u8 = 100 / 10;
+    let z: u64 = 100000 * 100000;
+
 }
