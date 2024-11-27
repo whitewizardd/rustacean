@@ -17,19 +17,35 @@
 //     }
 // }
 
+// fn main() {
+//     // learning the for loop 
+
+//     for n in 0 ..10 {
+//         // the n act as each number in the range starting from 0 and stopping at 9 i.e, including the first value and excluding the last
+
+//         println!("n is ::: {}", n)
+//     }
+
+//     println!();
+
+//     for n in 0 ..= 10 {
+//         // it starts at 0 and the n act as each number in the range starting from 0 and stopping at 10 because an = has been added to tell the compiler to include it 
+//         println!("n is ::: {}", n)
+//     }
+// }
+
+
 fn main() {
-    // learning the for loop 
+    // learning the while loop
 
-    for n in 0 ..10 {
-        // the n act as each number in the range starting from 0 and stopping at 9 i.e, including the first value and excluding the last
+    let mut number = 0;
 
-        println!("n is ::: {}", n)
-    }
+    while number <= 12 {
 
-    println!();
+        println!("number value is ::: {}", number);
 
-    for n in 0 ..= 10 {
-        // it starts at 0 and the n act as each number in the range starting from 0 and stopping at 10 because an = has been added to tell the compiler to include it 
-        println!("n is ::: {}", n)
-    }
+        number += 1
+    };
+
+    println!("number result finally ::: {} ", number);
 }
