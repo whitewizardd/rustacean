@@ -48,7 +48,10 @@ impl Door {
 }
 
 fn main() {
-    let room_door : Door = Door::create_new_door(20, 30, false);
+    let mut room_door : Door = Door::create_new_door(20, 30, false);
 
-    println!("here is the room door {:?}", room_door)
+    println!("here is the room door {:?}", room_door);
+
+    room_door.open_door();
+    assert!(room_door.is_open)
 }
