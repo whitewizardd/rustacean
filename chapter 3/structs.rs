@@ -21,6 +21,8 @@
 
 // }
 
+
+#[derive(Debug)]
 struct Door {
     width : u32,
     height : u32,
@@ -32,7 +34,21 @@ impl Door {
         Door {
             width,
             height, 
-            height
+            is_open
         }
     }
+
+    fn open_door(&mut self) {
+        self.is_open = true
+    }
+
+    fn close_door(&mut self) {
+        self.is_open = false
+    }
+}
+
+fn main() {
+    let room_door : Door = Door::create_new_door(20, 30, false);
+
+    println!("here is the room door {:?}", room_door)
 }
