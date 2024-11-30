@@ -29,29 +29,31 @@ struct Door {
     is_open : bool
 }
 
-impl Door {
-    fn create_new_door(width: u32 , height: u32 , is_open: bool ) -> Self {
-        Door {
-            width,
-            height, 
-            is_open
-        }
-    }
 
-    fn open_door(&mut self) {
-        self.is_open = true
-    }
 
-    fn close_door(&mut self) {
-        self.is_open = false
-    }
-}
+// impl Door {
+//     fn create_new_door(width: u32 , height: u32 , is_open: bool ) -> Self {
+//         Door {
+//             width,
+//             height, 
+//             is_open
+//         }
+//     }
 
-fn main() {
-    let mut room_door : Door = Door::create_new_door(20, 30, false);
+//     fn open_door(&mut self) {
+//         self.is_open = true
+//     }
 
-    println!("here is the room door {:?}", room_door);
+//     fn close_door(&mut self) {
+//         self.is_open = false
+//     }
+// }
 
-    room_door.open_door();
-    assert!(room_door.is_open)
-}
+// fn main() {
+//     let mut room_door : Door = Door::create_new_door(20, 30, false);
+
+//     println!("here is the room door {:?}", room_door);
+
+//     room_door.open_door();
+//     assert!(room_door.is_open)
+// }
