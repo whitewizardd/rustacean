@@ -24,12 +24,22 @@
 
 #[derive(Debug)]
 struct Door {
-    width : u32,
-    height : u32,
-    is_open : bool
+    width : String ,
+    height : String,
+    is_open : String
 }
 
+struct DoorDoor {
+    sub_door : Door
+}
 
+use std::mem;
+fn main() {
+
+    println!(" this is the memory consumed by the struct Door {}", mem::size_of::<Door> ());
+    println!(" this is the memory consumed by the primary data type {}", mem::size_of::<(String, String)> ());
+    println!(" this is the memory consumed by the struct DoorDoor {}", mem::size_of::<DoorDoor> ());
+}
 
 // impl Door {
 //     fn create_new_door(width: u32 , height: u32 , is_open: bool ) -> Self {
