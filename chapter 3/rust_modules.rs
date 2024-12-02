@@ -1,7 +1,8 @@
 
 
-mod PhysicalAccessControl {
+mod physical_access_control {
 
+    #[derive(Debug)]
     struct Door {
         width: u8,
         height: u8,
@@ -21,5 +22,6 @@ mod PhysicalAccessControl {
 
 
 fn main () {
-    
+    let door : Door = physical_access_control::Door::new(20, 50, true);
+
 }
