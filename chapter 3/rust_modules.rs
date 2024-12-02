@@ -3,14 +3,14 @@
 mod physical_access_control {
 
     #[derive(Debug)]
-    struct Door {
+    pub struct Door {
         width: u8,
         height: u8,
         is_open: bool
     }
 
     impl Door {
-        fn new (width: u8, height: u8, is_open: bool ) -> Self {
+        pub fn new (width: u8, height: u8, is_open: bool ) -> Self {
             Door {
                 width,
                 height,
@@ -21,7 +21,9 @@ mod physical_access_control {
 }
 
 
+use physical_access_control::Door;
 fn main () {
     let door : Door = physical_access_control::Door::new(20, 50, true);
 
+    println!("here is the door that was resturned ::: {:?}", door);
 }
